@@ -30,7 +30,7 @@ The underlying map defaults to using the [Humanitarian OpenStreetMap Team][HOT] 
 
 ### Edit the Radar Source
 
-Currently only [MSC GeoMET][] from the Government of Canada is supported.
+Currently only [MSC GeoMET][GeoMET] from the Government of Canada is supported.
 
 By default, only the "rain precipitation rate" radar layer is shown. GeoMET also supports "snow precipitation rate" and "rain reflectivity", and these can be enabled in `lib/wms_layers.coffee`.
 
