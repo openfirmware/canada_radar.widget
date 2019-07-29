@@ -4,7 +4,7 @@ A desktop widget to display automatically updating weather radar.
 
 ![London, Ontario Weather Radar](screenshot.jpg)
 
-Updates default to 10 minutes, the same interval as radar data is published by MSC GeoMET (Canada).
+Updates default to 10 minutes, the same interval as radar data is published by MSC GeoMET (Canada). The time that the data was last fetched is displayed in the upper left.
 
 This widget is focused on Canada; if you fork the repo and add support for other countries, let me know and I can link to you from here.
 
@@ -38,6 +38,10 @@ By default, only the "rain precipitation rate" radar layer is shown. GeoMET also
 
 At the bottom of the `index.coffee` file, the CSS is used to position and change the size of the widget. By default it sits in the top-left corner of the screen.
 
+### Customize "Last Fetch Time" Display
+
+The `timestampString` function in `index.coffee` is used to convert the [JavaScript Date object][Date] into a string for display. Change this if you prefer a different format.
+
 ## License
 
 MIT License
@@ -46,6 +50,7 @@ MIT License
 
 James Badger (@openfirmware)
 
+[Date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 [GeoMET]: https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/weather-tools-specialized-data/geospatial-web-services.html
 [HOT]: https://www.hotosm.org
 [Nominatim]: https://nominatim.openstreetmap.org
