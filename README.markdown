@@ -2,7 +2,9 @@
 
 A desktop widget to display automatically updating weather radar.
 
-(screenshot)
+![London, Ontario Weather Radar](screenshot.jpg)
+
+Updates default to 10 minutes, the same interval as radar data is published by MSC GeoMET (Canada).
 
 This widget is focused on Canada; if you fork the repo and add support for other countries, let me know and I can link to you from here.
 
@@ -14,7 +16,7 @@ Download the ZIP file for this widget, and extract the `canada_radar.widget` fol
 
 ## Customization
 
-Once installed, you can edit the widget with a text editor for your location and map style preference. Some examples of the map styles can be seen in [screenshots/overview.markdown](screenshots/overview.markdown) (TODO).
+Once installed, you can edit the widget with a text editor for your location and map style preference. Some examples of the map styles can be seen in [screenshots/overview.markdown](screenshots/overview.markdown).
 
 ### Edit Your Location
 
@@ -28,7 +30,7 @@ The underlying map defaults to using the [Humanitarian OpenStreetMap Team][HOT] 
 
 ### Edit the Radar Source
 
-Currently only [GeoMET][] from the Government of Canada is supported.
+Currently only [MSC GeoMET][] from the Government of Canada is supported.
 
 By default, only the "rain precipitation rate" radar layer is shown. GeoMET also supports "snow precipitation rate" and "rain reflectivity", and these can be enabled in `lib/wms_layers.coffee`.
 
